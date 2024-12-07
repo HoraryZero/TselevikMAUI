@@ -1,0 +1,67 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TselevikMAUI"
+             x:Class="TselevikMAUI.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Themes/LightThemeApp.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <!--Разметка-->
+            <Color x:Key="Primary">#00BFFF</Color>
+            <Style TargetType="Button">
+                <Setter Property="TextColor" Value="White"></Setter>
+                <Setter Property="VisualStateManager.VisualStateGroups">
+                    <VisualStateGroupList>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <VisualState x:Name="Normal">
+                                <VisualState.Setters>
+                                    <!--Разметка-->
+                                    <Setter Property="BackgroundColor" Value="#1E90FF" />
+                                </VisualState.Setters>
+                            </VisualState>
+                            <VisualState x:Name="Disabled">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="#332196F3" />
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </Setter>
+            </Style>
+
+            <LinearGradientBrush x:Key="ButtonYellowBrown" StartPoint="0,0" EndPoint="0,0.9">
+
+                <GradientStop Color="#DDA0DD" Offset="0.01" />
+
+                <GradientStop Color="#DA70D6" Offset="0.6" />
+
+                <GradientStop Color="#FF00FF" Offset="1.0" />
+
+            </LinearGradientBrush>
+
+            <LinearGradientBrush x:Key="ListGreenWhiteRed" StartPoint="0,0" EndPoint="1,1">
+
+                <GradientStop Color="#87CEEB" Offset="0.01" />
+
+                <GradientStop Color="#1E90FF" Offset="0.45" />
+
+                <GradientStop Color="#0000FF" Offset="0.9" />
+
+                <GradientStop Color="#0000CD" Offset="1.0" />
+
+            </LinearGradientBrush>
+
+            <LinearGradientBrush x:Key="ShellYellowBrown" StartPoint="0,0" EndPoint="0,0.9">
+
+                <GradientStop Color="#1E90FF" Offset="0.15" />
+
+                <GradientStop Color="#4169E1" Offset="0.8" />
+
+                <GradientStop Color="#00008B" Offset="1.0" />
+
+            </LinearGradientBrush>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

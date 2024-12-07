@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TselevikMAUI.ViewModels.BaseViewModel">
+    <Position X="1" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAQAAAAEAAIEAAAABAgAEAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>ViewModels\BaseViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TselevikMAUI.ViewModels.NewItemViewModel">
+    <Position X="1" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>UAAAECDAAAQkAAQQKAABAAAIAAQAICAJCAAICwAECgA=</HashCode>
+      <FileName>ViewModels\NewItemViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TselevikMAUI.ViewModels.ItemsViewModel">
+    <Position X="3.5" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>BgAAAAAAAAgADBAAAAIABACCBQAEAAAAABAAAAAABEA=</HashCode>
+      <FileName>ViewModels\ItemsViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TselevikMAUI.ViewModels.CategoryViewModel">
+    <Position X="8.5" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>UAAAECAAQACgAEQAoAAAAAAAAAAAQAAAAAAAAAAEIBA=</HashCode>
+      <FileName>ViewModels\CategoryViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TselevikMAUI.ViewModels.CategoriesViewModel">
+    <Position X="6" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>BgAAAAAAAAgADBAAAAIABACCBQAEAAAAABAAAAAABEA=</HashCode>
+      <FileName>ViewModels\CategoriesViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TselevikMAUI.ViewModels.ItemDetailViewModel">
+    <Position X="11" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACgAAAAoABAAAAAAAAAQABIAAAACAAAAAA=</HashCode>
+      <FileName>ViewModels\ItemDetailViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TselevikMAUI.ViewModels.LoginViewModel">
+    <Position X="3.5" Y="9.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAACAAAA=</HashCode>
+      <FileName>ViewModels\LoginViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TselevikMAUI.ViewModels.AboutViewModel">
+    <Position X="6" Y="9.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>ViewModels\AboutViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TselevikMAUI.App">
+    <Position X="4.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TselevikMAUI.AppShell">
+    <Position X="7" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>AppShell.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TselevikMAUI.MainPage">
+    <Position X="9.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MainPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TselevikMAUI.MauiProgram">
+    <Position X="7" Y="2" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MauiProgram.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TselevikMAUI.NotificationEventArgs">
+    <Position X="13.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>NotificationEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TselevikMAUI.Views.AboutPage">
+    <Position X="16" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\AboutPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TselevikMAUI.Views.CategoriesPage">
+    <Position X="16" Y="10.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAQAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\CategoriesPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TselevikMAUI.Views.CategoryPage">
+    <Position X="18.5" Y="11.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Views\CategoryPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TselevikMAUI.Views.ConfirmPage">
+    <Position X="12.5" Y="10.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ConfirmPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TselevikMAUI.Views.ItemDetailPage">
+    <Position X="12.5" Y="8.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ItemDetailPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TselevikMAUI.Views.ItemsPage">
+    <Position X="18.5" Y="4.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAgAAACQIAACAAAAAAACAAADAAAAEAAAAEA=</HashCode>
+      <FileName>Views\ItemsPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TselevikMAUI.Views.LanguageSettingPage">
+    <Position X="18.5" Y="8.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\LanguageSettingPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TselevikMAUI.Views.LoginPage">
+    <Position X="18.5" Y="9.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\LoginPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TselevikMAUI.Views.NewItemPage">
+    <Position X="18.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEEAAQAAABAAAUAAAAIEAAAAAAgAAAAAQ=</HashCode>
+      <FileName>Views\NewItemPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TselevikMAUI.Views.ThemeSelectionPage">
+    <Position X="16" Y="8.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ThemeSelectionPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TselevikMAUI.Views.UserDetailsPage">
+    <Position X="16" Y="7.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\UserDetailsPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TselevikMAUI.Views.UserSummaryPage">
+    <Position X="16" Y="4" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAIAAAAAAAAABAAAAAAIAAAAAAAEwAAAAAAAAAE=</HashCode>
+      <FileName>Views\UserSummaryPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TselevikMAUI.EnumPicker">
+    <Position X="16" Y="2.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Controls\EnumPicker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TselevikMAUI.Extension.TranslateExtension">
+    <Position X="13.5" Y="2.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Extension\TranslateExtension.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TselevikMAUI.Extension.Translator">
+    <Position X="13.5" Y="4.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAKAAAAAAAgAAAAAAAQQAAAAAAAAA=</HashCode>
+      <FileName>Extension\Translator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TselevikMAUI.Models.Category">
+    <Position X="8.75" Y="10.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAgAEAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Models\Category.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TselevikMAUI.Models.Item">
+    <Position X="10.75" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAgAAAAgAAAAAAIAAAAAAABAAAACAAACAA=</HashCode>
+      <FileName>Models\Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

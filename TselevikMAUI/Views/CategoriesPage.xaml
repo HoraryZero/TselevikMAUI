@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TselevikMAUI.Views.CategoriesPage"
+             
+             xmlns:local="clr-namespace:TselevikMAUI.ViewModels" 
+             xmlns:model="clr-namespace:TselevikMAUI.Models"
+             xmlns:extension="clr-namespace:TselevikMAUI.Extension"
+             xmlns:strings="clr-namespace:TselevikMAUI.Resources.Strings"
+             x:Name="categoriesPage"
+             Title="{extension:Translate Key=FlyoutItem_Categories}"
+             Background="{StaticResource ListGreenWhiteRed}">
+
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="{extension:Translate Key=ToolbarItem_Add}" Command="{Binding AddItemCommand}" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+
+        <RefreshView x:DataType="local:CategoriesViewModel" Command="{Binding LoadItemsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
+            <CollectionView x:Name="ItemsListView"
+                
+                ItemsSource="{Binding Items}"
+                SelectionMode="None">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame Padding="0.1" BorderColor="#1E90FF" CornerRadius="0.1" Margin="1">
+                            <SwipeView>
+                                <SwipeView.LeftItems>
+                                    <SwipeItems x:DataType="model:Category">
+                                        <SwipeItem Text="Move Up"
+                                               IconImageSource="arrow_up.png"
+                                               BackgroundColor="DarkGray"
+                                               Command="{Binding Source={x:Reference
+                                        categoriesPage}, Path=BindingContext.MoveToUpCommand}"
+                                               CommandParameter="{Binding}" />
+                                        <SwipeItem Text="Move Down"
+                                               IconImageSource="arrow_down.png"
+                                               BackgroundColor="DarkGray"
+                                               Command="{Binding Source={x:Reference
+                                        categoriesPage}, Path=BindingContext.MoveToBottomCommand}"
+                                               CommandParameter="{Binding}" />
+                                        <SwipeItem Text="Delete"
+                                               IconImageSource="recycle_bin.png"
+                                               BackgroundColor="Red"
+                                               Command="{Binding Source={x:Reference
+                                        categoriesPage}, Path=BindingContext.RemoveCommand}"
+                                               CommandParameter="{Binding}" />
+                                    </SwipeItems>
+                                </SwipeView.LeftItems>
+
+
+                                <StackLayout Padding="20" x:DataType="model:Category" BackgroundColor="#4169E1">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="{Binding Title}" 
+                            LineBreakMode="NoWrap" 
+                            Style="{DynamicResource ListItemTextStyle}" 
+                            FontSize="16" />
+                                        <Label Text="{Binding SuccessRate}" 
+                            LineBreakMode="NoWrap" 
+                            Style="{DynamicResource ListItemTextStyle}" 
+                            FontSize="16" />
+                                    </StackLayout>
+                                    <Label Text="{Binding Description}" 
+                            LineBreakMode="NoWrap"
+                            Style="{DynamicResource ListItemDetailTextStyle}"
+                            FontSize="13" />
+                                    <StackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer 
+                                NumberOfTapsRequired="1"
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type local:CategoriesViewModel}}, Path=ItemTapped}"		
+                                CommandParameter="{Binding .}">
+                                        </TapGestureRecognizer>
+                                    </StackLayout.GestureRecognizers>
+                                </StackLayout>
+                            </SwipeView>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </RefreshView>
+    </ContentPage.Content>
+</ContentPage>

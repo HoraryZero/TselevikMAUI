@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:extension="clr-namespace:TselevikMAUI.Extension"
+             xmlns:strings="clr-namespace:TselevikMAUI.Resources.Strings"
+             x:Class="TselevikMAUI.Views.NewItemPage"
+             Shell.PresentationMode="ModalAnimated"
+             Title="{extension:Translate Key=Title_NewItem}"
+             Background="{StaticResource ListGreenWhiteRed}">
+
+    <!--<ContentPage.Resources>
+        <Style TargetType="Entry">
+            <Style.Triggers>
+                <Trigger TargetType="Entry"
+                        Property="IsFocused" Value="True">
+                    <Setter Property="BackgroundColor" Value="Yellow" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </ContentPage.Resources>-->
+
+    <ContentPage.Content>
+        <StackLayout x:Name="stackLayout" Spacing="3" Padding="15">
+            <Label Text="{extension:Translate Key=NewItem_Text}" FontSize="Medium" />
+            <Entry Text="{Binding Text, Mode=TwoWay}" FontSize="Medium">
+                <Entry.Triggers>
+                    <Trigger TargetType="Entry"
+                        Property="IsFocused" Value="True">
+                        <Setter Property="BackgroundColor" Value="Pink"/>
+                    </Trigger>
+                </Entry.Triggers>
+            </Entry>
+            <Label Text="{extension:Translate Key=NewItem_Description}" FontSize="Medium"/>
+            <Editor Text="{Binding Description, Mode=TwoWay}" AutoSize="TextChanges" FontSize="Medium" Margin="0" />
+            <Label Text="{extension:Translate Key=NewItem_Date}" FontSize="Medium" />
+            <DatePicker x:Name="DatePickerDate" DateSelected="DatePickerDate_OnDateSelected"/>
+            <Label Text="{extension:Translate Key=NewItem_Importance}" FontSize="Medium" />
+            <Editor Text="{Binding Importance, Mode=TwoWay}" AutoSize="TextChanges" FontSize="Medium" Margin="0" />
+            <Label Text="{extension:Translate Key=NewItem_Category}" FontSize="Medium" />
+            <Picker x:Name="PickerCategory" SelectedItem="{Binding Category, Mode=TwoWay}" SelectedIndexChanged="picker_SelectedIndexChanged"/>
+
+            <StackLayout Orientation="Horizontal">
+                <Button Text="{extension:Translate Key=NewItemBtn_Cancel}" Command="{Binding CancelCommand}" BackgroundColor="#A52A2A" HorizontalOptions="FillAndExpand">
+                    
+                </Button>
+                <Button Text="{extension:Translate Key=NewItemBtn_Save}" Command="{Binding SaveCommand}" BackgroundColor="#20B2AA" HorizontalOptions="FillAndExpand">
+
+                </Button>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="buttonRecord" Text="Record" Command="{Binding SwitchRecordingCommand}"  Clicked="SwitchRecording"  HorizontalOptions="FillAndExpand"
+                        BackgroundColor="#7cbb45" />
+
+
+                <Button x:Name="buttonPlay" Text="Play" Command="{Binding SwitchPlayingCommand}" Clicked="SwitchPlaying" HorizontalOptions="FillAndExpand" 
+                        BackgroundColor="Silver"/>
+
+
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

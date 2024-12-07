@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:extension="clr-namespace:TselevikMAUI.Extension"
+             xmlns:strings="clr-namespace:TselevikMAUI.Resources.Strings"
+             x:Class="TselevikMAUI.Views.UserSummaryPage"
+             Title="{extension:Translate Key=FlyoutItem_LanguageSettings}">
+
+    <StackLayout Background="{StaticResource ListGreenWhiteRed}">
+        <ScrollView>
+            <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25">
+                <Image
+            Source="dotnet_bot.png"
+            HeightRequest="185"
+            Aspect="AspectFit"
+            SemanticProperties.Description="dot net bot in a race car number eight" />
+
+                <Label
+            Text="{extension:Translate Key=Title1}"
+            Style="{StaticResource Headline}"
+            SemanticProperties.HeadingLevel="Level1"
+               />
+                <VerticalStackLayout RadioButtonGroup.GroupName="Country">
+                    <RadioButton Content="English" x:Name="rbEnglish" CheckedChanged="rbEnglish_CheckedChanged" IsChecked="True"/>
+                    <RadioButton Content="Русский" x:Name="rbRussian" CheckedChanged="rbRussian_CheckedChanged"/>
+                    <RadioButton Content="Français" x:Name="rbFrench" CheckedChanged="rbFrench_CheckedChanged"/>
+                    <RadioButton Content="Español" x:Name="rbSpanish" CheckedChanged="rbSpanish_CheckedChanged"/>
+                    <RadioButton Content="Deutsch" x:Name="rbGerman" CheckedChanged="rbGerman_CheckedChanged"/>
+                </VerticalStackLayout>
+            </VerticalStackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

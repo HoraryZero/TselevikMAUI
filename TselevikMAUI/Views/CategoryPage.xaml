@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TselevikMAUI.Views.CategoryPage">
+
+    <ContentPage.Content>
+        <StackLayout Background="{StaticResource ListGreenWhiteRed}">
+
+            <Label Text="Title" FontSize="Medium" />
+            <Entry Text="{Binding Title, Mode=TwoWay}" FontSize="Medium" />
+            <Label Text="Description" FontSize="Medium" />
+            <Editor Text="{Binding Description, Mode=TwoWay}" AutoSize="TextChanges" FontSize="Medium" Margin="0" />
+            <Label Text="Success Rate" FontSize="Medium" />
+            <Editor Text="{Binding SuccessRate, Mode=TwoWay}" AutoSize="TextChanges" FontSize="Medium" Margin="0" />
+
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Cancel" Command="{Binding CancelCommand}" BackgroundColor="#A52A2A" HorizontalOptions="FillAndExpand"></Button>
+                <Button Text="Save" Command="{Binding SaveCommand}" BackgroundColor="#008B8B" HorizontalOptions="FillAndExpand"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
