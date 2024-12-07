@@ -1,0 +1,54 @@
+# Общие исключения для проектов .NET
+bin/
+obj/
+*.userprefs
+*.csproj.user
+
+# Конфигурационные файлы IDE
+.vs/
+.idea/
+*.suo
+*.user
+*.rsuser
+*.sln.docstates
+
+# Исключения для MAUI
+AppPackages/
+Packages/
+Thumbs.db
+*.db
+*.db-shm
+*.db-wal
+
+# Конфигурации для iOS
+*.xcworkspace
+*.xcuserstate
+*.moved-aside
+*.plist
+project.xcworkspace/
+
+# Конфигурации для Android
+*.apk
+*.apks
+*.aab
+*.keystore
+
+# Конфигурации macOS
+.DS_Store
+*.dSYM
+
+# Исключения для временных файлов
+*.swp
+*.lock
+*.log
+*.tmp
+*.temp
+
+# Конфигурационные файлы для локальной сборки
+environment.*
+appsettings.Development.json
+
+# Исключение для локальных настроек тестирования
+TestResults/
+*.coverage
+*.coveragexml
