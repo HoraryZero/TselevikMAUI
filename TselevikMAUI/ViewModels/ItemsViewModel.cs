@@ -13,6 +13,7 @@ namespace TselevikMAUI.ViewModels
         public ObservableCollection<Item> Items { get; }
         public Command LoadItemsCommand { get; }
         public Command AddItemCommand { get; }
+        public Command GoToUserSummaryPage { get; }
         public Command<Item> ItemTapped { get; }
         public Command MoveToUpCommand { protected set; get; }
         public Command MoveToBottomCommand { protected set; get; }
@@ -22,10 +23,9 @@ namespace TselevikMAUI.ViewModels
             Title = "Browse";
             Items = new ObservableCollection<Item>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
-
             ItemTapped = new Command<Item>(OnItemSelected);
-
             AddItemCommand = new Command(OnAddItem);
+            GoToUserSummaryPage = new Command(OnUserSummaryPage);
             MoveToUpCommand = new Command(MoveToTop);
             MoveToBottomCommand = new Command(MoveToBottom);
             RemoveCommand = new Command(Remove);
@@ -73,6 +73,11 @@ namespace TselevikMAUI.ViewModels
         private async void OnAddItem(object obj)
         {
             await Shell.Current.GoToAsync(nameof(NewItemPage));
+        }
+
+        private async void OnUserSummaryPage(object obj)
+        {
+            await Shell.Current.GoToAsync(nameof(UserSummaryPage));
         }
 
         async void OnItemSelected(Item item)

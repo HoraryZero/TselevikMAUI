@@ -7,6 +7,7 @@ namespace TselevikMAUI {
             InitializeComponent();
             Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
             Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
+            Routing.RegisterRoute(nameof(UserSummaryPage), typeof(UserSummaryPage));
             Routing.RegisterRoute(nameof(CategoryPage), typeof(CategoryPage));
             //My way
             Routing.RegisterRoute(nameof(CategoryPage), typeof(CategoryPage));

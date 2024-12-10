@@ -11,7 +11,7 @@
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="{extension:Translate Key=ToolbarItem_Add}" Command="{Binding AddItemCommand}"/>
-        <ToolbarItem Text="{extension:Translate Key=ToolbarItem_Settings}" Command="{Binding AddItemCommand}"/>
+        <ToolbarItem Text="{extension:Translate Key=ToolbarItem_Settings}" Command="{Binding GoToUserSummaryPage}"/>
     </ContentPage.ToolbarItems>
 
     <Grid>
