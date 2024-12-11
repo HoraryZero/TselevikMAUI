@@ -9,12 +9,11 @@ namespace TselevikMAUI.Services
     {
         const string Url = "http://195.2.73.217:7092/api/Items";
 
-        // настройки для десериализации для нечувствительности к регистру символов
         JsonSerializerOptions options = new JsonSerializerOptions
         {
             PropertyNameCaseInsensitive = true,
         };
-        // настройка клиента
+
         private HttpClient GetClient()
         {
             HttpClientHandler handler = new HttpClientHandler
@@ -26,7 +25,6 @@ namespace TselevikMAUI.Services
             return client;
         }
 
-        // получаем всех друзей
         public async Task<IEnumerable<Item>> GetItemsAsync(bool forceRefresh = false)
         {
             HttpClient client = GetClient();
@@ -41,7 +39,6 @@ namespace TselevikMAUI.Services
             return await Task.FromResult(Item);
         }
 
-        // добавляем одного друга
         public async Task<bool> AddItemAsync(Item item)
         {
             HttpClient client = GetClient();
@@ -59,7 +56,7 @@ namespace TselevikMAUI.Services
             bool result = answer != null;
             return await Task.FromResult(result);
         }
-        // обновляем друга
+
         public async Task<bool> UpdateItemAsync(Item item)
         {
             HttpClient client = GetClient();
@@ -76,7 +73,7 @@ namespace TselevikMAUI.Services
             bool result = answer != null;
             return await Task.FromResult(result);
         }
-        // удаляем друга
+
         public async Task<bool> DeleteItemAsync(string id)
         {
             HttpClient client = GetClient();

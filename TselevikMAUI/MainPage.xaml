@@ -9,7 +9,6 @@
     </ContentPage.BindingContext>
 
     <AbsoluteLayout>
-        <!-- Градиентный фон -->
         <Frame x:Name="backGradient" 
                AbsoluteLayout.LayoutBounds="1, 0, 1, 1"
                AbsoluteLayout.LayoutFlags="All"
@@ -17,7 +16,6 @@
                Scale="1.5" AnchorX="0.95" AnchorY="0"
                IsClippedToBounds="False" />
 
-        <!-- Ваш контент -->
         <StackLayout VerticalOptions="CenterAndExpand" 
                      HorizontalOptions="CenterAndExpand"
                      AbsoluteLayout.LayoutBounds="0.5, 0.5, AutoSize, AutoSize"
